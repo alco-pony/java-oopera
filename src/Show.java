@@ -1,10 +1,15 @@
 import java.util.ArrayList;
 
 public class Show {
-    String title;
-    int duration;
-    Director director;
-    ArrayList<Actor> actors;
+    private String title;
+    private int duration;
+
+    public Director getDirector() {
+        return director;
+    }
+
+    private Director director;
+    private ArrayList<Actor> actors;
 
     Show(String title, int duration, Director director) {
         this.title = title;
@@ -14,14 +19,14 @@ public class Show {
     }
 
     public void printDirectorInfo() {
-        System.out.println(director.name + " " + director.surname);
+        System.out.println(director);
     }
 
     public void printActorsList() {
         System.out.println("-".repeat(10));
         System.out.println("Список актеров " + title);
         for (Actor actor : actors) {
-            System.out.println(actor.name + " " + actor.surname + "(" + actor.height + ")");
+            System.out.println(actor);
         }
         System.out.println(" ");
     }

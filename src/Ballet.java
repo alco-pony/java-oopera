@@ -1,5 +1,5 @@
 public class Ballet extends MusicalShow{
-    String choreographer;
+    private String choreographer;
 
 
     Ballet(String title, int duration, Director director, String musicAuthor, String librettoText, String choreographer) {

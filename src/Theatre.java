@@ -10,7 +10,7 @@ public class Theatre {
         Director viazemskiy = new Director("Даниил", "Вяземский", Gender.MALE, 33);
 
         Ballet ozero = new Ballet("Озеро", 80, viazemskiy, "Слава Мэрлоу", "Ты горишь" +
-                "как огонь, у меня огония", "Валерий Леоньтев");
+                "как огонь, у меня агония", "Валерий Леоньтев");
         Opera grozniy = new Opera("Иван Грозный", 100, chausov, "Юрий Антонов",
                 "На маленьком плотуууу", 12);
         Show gamlet = new Show("Гамлет", 66, chausov);
@@ -25,6 +25,8 @@ public class Theatre {
         ozero.addActor(sidorova);
 
         ozero.printActorsList();
+        ozero.printDirectorInfo();
+
         gamlet.printActorsList();
         grozniy.printActorsList();
 
@@ -35,10 +37,5 @@ public class Theatre {
 
         ozero.printLibrettoText();
         grozniy.printLibrettoText();
-
-
-
-
-
     }
 }
